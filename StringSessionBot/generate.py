@@ -114,10 +114,10 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**- كـود تيرمكـس {} ** \n\n{} \n\n**- تم الاستخـراج بواسطـة** Dev: @a_t_9\n**** ".format("تليثـون" if telethon else "بايروجـرام", string_session)
+    text = "**- تم إنشاء جلسة تيرمكس {}  بنجاح .. \n\n- يرجى التحقق من حافظـة حسابـك واخذ الكود!\n\n- Dev:  @a_t_9*\n\n"** ".format("تليثـون" if telethon else "بايروجـرام", string_session)
     await client.send_message("me", text)
     await client.disconnect()
-    await phone_code_msg.reply("**- كـود تيرمكـس {} ** \n\n{} \n\n**- تم الاستخـراج بواسطـة** Dev: @a_t_9\n******".format("تليثـون" if telethon else "بايروجـرام"))
+    await phone_code_msg.reply("**- تم إنشاء جلسة تيرمكس {}  بنجاح .. \n\n- يرجى التحقق من حافظـة حسابـك واخذ الكود!\n\n- Dev: @a_t_9*\n\n"**".format("تليثـون" if telethon else "بايروجـرام"))
 
 
 async def cancelled(msg):
