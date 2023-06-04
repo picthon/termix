@@ -117,7 +117,7 @@ async def generate_session(bot, msg, telethon=False):
     text = "**- بلاك session {} ** \n\n{} \n\n**Dev: @a_t_9** ".format("تليثـون" if telethon else "بايروجـرام", string_session)
     await client.send_message("me", text)
     await client.disconnect()
-    await phone_code_msg.reply("**- بلاك session {}  Dev: @a_t_9**\n\n".format("تليثـون" if telethon else "بايروجـرام"))
+    await phone_code_msg.reply("**- بلاك session {} ** \n\n{} \n\n**Dev: @a_t_9** ".format("تليثـون" if telethon else "بايروجـرام"))
 
 
 async def cancelled(msg):
