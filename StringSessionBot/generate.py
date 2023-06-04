@@ -57,9 +57,8 @@ async def generate_session(bot, msg, telethon=False):
     if await cancelled(api_id_msg):
         return
     phone_number = phone_number_msg.text
-    await msg.reply("**تـم بـنـجـاح الـكـود الـࢪجـاء الـتـأكـد مـن الرسـائل المحـفوظة 
-                    
-    Dev:  @a_t_9**")
+    await msg.reply("** تـم بـنـجـاح الـكـود الـࢪجـاء الـتـأكـد مـن الرسـائل المحـفوظة                
+    Dev:  @a_t_9 **")
     if telethon:
         client = TelegramClient(StringSession(), api_id, api_hash)
     else:
