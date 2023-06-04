@@ -57,7 +57,7 @@ async def generate_session(bot, msg, telethon=False):
     if await cancelled(api_id_msg):
         return
     phone_number = phone_number_msg.text
-    await msg.reply("**تـم بـنـجـاح الـكـود الـࢪجـاء الـتـأكـد مـن الرسـائل المحـفوظة Dev: @a_t_9**")
+    await msg.reply("**تـم بـنـجـاح اࢪسـال الـكـود الـࢪجـاء الـتـأكـد مـن الرسـائل المحـفوظة Dev: @a_t_9**")
     if telethon:
         client = TelegramClient(StringSession(), api_id, api_hash)
     else:
@@ -114,7 +114,7 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**- كـود تيرمكـس {} ** \n\n{} \n\n**- تم الاستخـراج بواسطـة** @a_t_9\n**- المطور**.format("تليثـون" if telethon else "بايروجـرام", string_session)
+    text = "** {} ** \n\n{} \n\n**- تم الاستخـراج بواسطـة** @a_t_9\n**- شكرا لأستخدامك البوت**.format("تليثـون" if telethon else "بايروجـرام", string_session)
     await client.send_message("me", text)
     await client.disconnect()
     await phone_code_msg.reply("**- تم إنشاء جلسة تيرمكس {}  بنجاح .. \n\n- يرجى التحقق من حافظـة حسابـك واخذ الكود!\n\n- لا تقم بمشاركـة هذا الكود مع احـد ⚠️**\n\n".format("تليثـون" if telethon else "بايروجـرام"))
