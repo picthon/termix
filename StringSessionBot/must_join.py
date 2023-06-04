@@ -19,7 +19,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"**- عليـك الاشتـراك بقنـاة السـورس** [PICTHON]({https://t.me/PICTH0N}) **لكي تستطيـع استخـدام البــوت**",
+                    f"**- عليـك الاشتـراك بقنـاة السـورس** [PICTH0N]({https://t.me/PICTH0N}) **لكي تستطيـع استخـدام البــوت**",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("اضغـط للاشتـراك", url=link)]
