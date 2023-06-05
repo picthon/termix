@@ -117,7 +117,7 @@ async def generate_session(bot, msg, telethon=False):
     text = "** - كـود تيرمكـس تيليثون {}  \n\n{} \n\n- تم الاستخـراج بواسطـة @a_t_9\n- المطور** ".format("تليثـون" if telethon else "بايروجـرام", string_session)
     await client.send_message("me", text)
     await client.disconnect()
-    await phone_code_msg.reply("****- تم إنشاء جلسة تيرمكس {}  بنجاح ..** \n\n**- يرجى التحقق من حافظـة حسابـك واخذ الكود!**\n\n**- لا تقم بمشاركـة هذا الكود مع احـد ⚠️**\n\n".format("تليثـون" if telethon else "بايروجـرام"))
+    await phone_code_msg.reply("**- تم إنشاء جلسة تيرمكس {} @PICTH0N بنجاح .. \n\n- يرجى التحقق من حافظـة حسابـك واخذ الكود!\n\n- لا تقم بمشاركـة هذا الكود مع احـد ⚠️**\n\n".format("تليثـون" if telethon else "بايروجـرام"))
 
 
 async def cancelled(msg):
